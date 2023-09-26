@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { FormsModule } from '@angular/forms';
 import { ListusersComponent } from './listusers/listusers.component';
+import { ListUserComponent } from './list-user/list-user.component';
+import { BackgroundColorChangeDirective } from './background-color-change.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    ListusersComponent
+    ListusersComponent,
+    ListUserComponent,
+    BackgroundColorChangeDirective
   ],
   imports: [
     BrowserModule,
