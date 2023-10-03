@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Users } from '../model/user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-user',
@@ -7,6 +8,11 @@ import { Users } from '../model/user';
   styleUrls: ['./list-user.component.css']
 })
 export class ListUserComponent {
+
+  constructor(private router:Router){
+
+
+  }
 show = false
 search='';
   liste :Users[] = [
@@ -85,5 +91,8 @@ j = -1
 Detailuser(index:any){
   this.j = index
   this.show = true
+}
+goToComopnent(d:any){
+  this.router.navigate(['user/detail/',d])
 }
 }
