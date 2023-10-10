@@ -1,0 +1,23 @@
+<p>list-products works!</p>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Code</th>
+        <th>Libelle</th>
+        <th>Prix</th>
+        <th>Taux</th>
+        <th>Action</th>
+
+    </tr>
+    <tr *ngFor="let product of ListProduct">
+        <td>{{ product.id }}</td>
+        <td>{{ product.code }}</td>
+        <td>{{ product.libelle }}</td>
+        <td>{{ product.prix }}</td>
+        <td>{{ product.tauxTva }}</td>
+        <td> <button (click)="calculateNumber(product.libelle)">**Calculer**</button></td>
+
+    </tr>
+</table>
+<p *ngIf="selectlibelle">Nombre de produits libelle "{{selectlibelle}}": {{numberOfProducts}}</p>

@@ -4,6 +4,7 @@ import { ListUserComponent } from './list-user/list-user.component';
 import { FirstComponent } from './first/first.component';
 import { NotfoundComponent } from './shared/notfound/notfound.component';
 import { LoginComponent } from './core/manageUser/login/login.component';
+import { ListProductsComponent } from './list-products/list-products.component';
 
 const routes: Routes = [
  // {path:'',redirectTo:'login',pathMatch:'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'first', component:FirstComponent},
   
   {path:'p',loadChildren:()=>import('../app/core/manageUser/auth/auth.module').then((t)=>t.AuthModule)},
- 
+  {path:'products',component:ListProductsComponent},
+
   {path:'**',component:NotfoundComponent},
 ];
 

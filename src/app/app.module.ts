@@ -13,6 +13,7 @@ import { LoginComponent } from './core/manageUser/login/login.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AuthModule } from './core/manageUser/auth/auth.module';
 import { MangeProductModule } from './core/mange-product/mange-product.module';
+import { ListProductsComponent } from './list-products/list-products.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MangeProductModule } from './core/mange-product/mange-product.module';
     NotfoundComponent,
     LoginComponent,
     NavbarComponent,
+    ListProductsComponent,
 
     
   ],
