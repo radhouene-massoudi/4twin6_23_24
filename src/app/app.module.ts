@@ -11,11 +11,8 @@ import { BackgroundColorChangeDirective } from './background-color-change.direct
 import { NotfoundComponent } from './shared/notfound/notfound.component';
 import { LoginComponent } from './core/manageUser/login/login.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { DetailUserComponent } from './core/manageUser/detail-user/detail-user.component';
-import { ShowUsersComponent } from './core/manageUser/show-users/show-users.component';
-import { AddUserComponent } from './core/manageUser/add-user/add-user.component';
-import { UpdateUserComponent } from './core/manageUser/update-user/update-user.component';
-import { DeleteUserComponent } from './core/manageUser/delete-user/delete-user.component';
+import { AuthModule } from './core/manageUser/auth/auth.module';
+import { MangeProductModule } from './core/mange-product/mange-product.module';
 
 @NgModule({
   declarations: [
@@ -27,16 +24,15 @@ import { DeleteUserComponent } from './core/manageUser/delete-user/delete-user.c
     NotfoundComponent,
     LoginComponent,
     NavbarComponent,
-    DetailUserComponent,
-    ShowUsersComponent,
-    AddUserComponent,
-    UpdateUserComponent,
-    DeleteUserComponent
+
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AuthModule,
+    MangeProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]
