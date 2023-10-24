@@ -1,25 +1,29 @@
 {
-  "users": [
+  "users": [],
+  "products": [
     {
       "id": 1,
-      "name": "json-server",
-      "surname": "typicode",
-      "adresse":"tunis",
-      "age":55
+      "code":"TV_67" ,
+      "libelle":"TV",
+      "prix_unitaire":500 ,
+      "taux_tva": 0.19
+
     },
     {
       "id": 2,
-      "name": "json-server",
-      "surname": "typicode",
-      "adresse":"tunis",
-      "age":55
+      "code":"TV_68" ,
+      "libelle":"TV",
+      "prix_unitaire":900 ,
+      "taux_tva": 0.19
+
     },
     {
       "id": 3,
-      "name": "json-server",
-      "surname": "typicode",
-      "adresse":"tunis",
-      "age":55
+      "code":"TV_69" ,
+      "libelle":"TV",
+      "prix_unitaire":700 ,
+      "taux_tva": 0.15
+
     }
   ]
 }

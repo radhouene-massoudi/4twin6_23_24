@@ -15,8 +15,9 @@ constructor(private user:UserService
 }
 ngOnInit(){
   this.user.removeUser(this.ac.snapshot.params['id']).subscribe(
-    ()=>{
-      this.router.navigate(['users'])
+  ()=>{
+    alert('next')
+      //this.router.navigate(['users'])
     },
     (err)=>{
       let status=err.status;
@@ -25,6 +26,9 @@ ngOnInit(){
         case 401:alert('unauthoriz ') ;break;
         case 404:alert('unauthoriz ') ;break;
       }
+    },
+    ()=>{
+      alert('add product')
     }
   );
 }
