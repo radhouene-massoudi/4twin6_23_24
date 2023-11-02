@@ -18,4 +18,7 @@ return this.http.get<User>(this.baseUrl+id)
   removeUser(id:any){
 return this.http.delete(this.baseUrl+id)
   }
+  addUser(data:User):Observable<User>{
+    return this.http.post<User>(this.baseUrl,data);
+  }
 }

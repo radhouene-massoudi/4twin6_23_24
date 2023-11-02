@@ -1,29 +1,34 @@
 {
-  "users": [],
+  "users": [
+    {
+      "name": "Lilah Black",
+      "surname": "Todd",
+      "adress": "Optio quidem molest",
+      "age": "66",
+      "id": 1
+    }
+  ],
   "products": [
     {
       "id": 1,
-      "code":"TV_67" ,
-      "libelle":"TV",
-      "prix_unitaire":500 ,
+      "code": "TV_67",
+      "libelle": "TV",
+      "prix_unitaire": 500,
       "taux_tva": 0.19
-
     },
     {
       "id": 2,
-      "code":"TV_68" ,
-      "libelle":"TV",
-      "prix_unitaire":900 ,
+      "code": "TV_68",
+      "libelle": "TV",
+      "prix_unitaire": 900,
       "taux_tva": 0.19
-
     },
     {
       "id": 3,
-      "code":"TV_69" ,
-      "libelle":"TV",
-      "prix_unitaire":700 ,
+      "code": "TV_69",
+      "libelle": "TV",
+      "prix_unitaire": 700,
       "taux_tva": 0.15
-
     }
   ]
 }
