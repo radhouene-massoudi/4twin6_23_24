@@ -1,1 +1,39 @@
 <p>update-user works!</p>
+name:<input type="text" [formControl]="name">
+surname:<input type="text" [formControl]="surname">
+<input type="submit" value="save" (click)="showForm()" [disabled]="name.invalid">
+<hr>
+<form [formGroup]="fg">
+    <label>name</label>
+    <input type="text" formControlName="namefg">
+    <div *ngIf="namefgE?.invalid && namefgE?.touched ">
+        <div *ngIf="namefgE?.errors?.['required']">
+            required
+        </div>
+        <div *ngIf="namefgE?.errors?.['minlength']">
+            minlength
+        </div>
+    </div>
+    <label>surname</label>
+    <input type="text" formControlName="surnamefg">
+    <label>email</label>
+    <input type="text" formControlName="email">
+    <input type="submit" value="update" (click)="showFromFG()" [disabled]="fg.invalid">
+</form>
+<hr>
+<form [formGroup]="formb">
+    <label>name</label>
+    <input type="text" formControlName="namefb">
+
+
+    <label>surname</label>
+    <input type="text" formControlName="surnamefb">
+    <label>email</label>
+    <input type="text" formControlName="emailfb">
+    <div *ngFor="let control of Skills.controls; let i =index" formArrayName="skills">
+        <input type="text" formControlName="{{i}}">
+        <input type="submit" value="--" (click)="removeElement(i)">
+    </div>
+    <input type="submit" value="+" (click)="addElement()">
+    <input type="submit" value="update" (click)="showFromFG()" [disabled]="fg.invalid">
+</form>

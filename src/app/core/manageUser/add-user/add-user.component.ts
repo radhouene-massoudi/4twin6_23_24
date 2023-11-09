@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { User } from 'src/app/model/users';
 import { UserService } from './../service/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-user',
@@ -8,7 +9,7 @@ import { UserService } from './../service/user.service';
   styleUrls: ['./add-user.component.css']
 })
 export class AddUserComponent {
-  constructor(private userservice:UserService){
+  constructor(private userservice:UserService,private router:Router){
 
   }
 user=new User()
@@ -19,7 +20,8 @@ saveUser(u:User){
 //add user
 this.userservice.addUser(u).subscribe(
   ()=>{
-    alert('added');
+    this.router.navigate(['/p/user'])
+    //alert('added');
   }
 );
 }

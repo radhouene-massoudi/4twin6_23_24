@@ -7,7 +7,7 @@ import { ShowUsersComponent } from '../show-users/show-users.component';
 import { AddUserComponent } from '../add-user/add-user.component';
 import { UpdateUserComponent } from '../update-user/update-user.component';
 import { DeleteUserComponent } from '../delete-user/delete-user.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     AuthRoutingModule,
     FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AuthModule { }
