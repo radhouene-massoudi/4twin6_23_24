@@ -5,9 +5,11 @@ import { AddUserComponent } from '../add-user/add-user.component';
 import { DetailUserComponent } from '../detail-user/detail-user.component';
 import { DeleteUserComponent } from '../delete-user/delete-user.component';
 import { UpdateUserComponent } from '../update-user/update-user.component';
+import { UpdateuserreactiveformComponent } from '../updateuserreactiveform/updateuserreactiveform.component';
 
 const routes: Routes = [
-
+  {path:'u/:id', component:UpdateuserreactiveformComponent},
+    
   {path:'user', component:ShowUsersComponent, children:[
     {path:'add', component:AddUserComponent},
     {path:'detail/:id', component:DetailUserComponent},

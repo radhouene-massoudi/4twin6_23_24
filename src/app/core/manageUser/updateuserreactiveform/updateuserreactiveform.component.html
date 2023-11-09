@@ -1,0 +1,11 @@
+<form [formGroup]="formBuilder">
+<label>name</label>
+<input type="text" formControlName="name">
+<label>surname</label>
+<input type="text" formControlName="surname">
+<label>adresse</label>
+<input type="text" formControlName="adresse">
+<label>age</label>
+<input type="number" formControlName="age">
+<input type="submit" value="update" (click)="update()">
+</form>>

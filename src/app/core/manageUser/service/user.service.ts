@@ -12,13 +12,16 @@ baseUrl="http://localhost:3000/users/"
   getUserList():Observable<User[]>{
     return this.http.get<User[]>(this.baseUrl);
   }
-  getUserById(id:any):Observable<User>{
-return this.http.get<User>(this.baseUrl+id)
+  getUserById(id:any):Observable<any>{
+return this.http.get<any>(this.baseUrl+id)
   }
   removeUser(id:any){
 return this.http.delete(this.baseUrl+id)
   }
   addUser(data:User):Observable<User>{
     return this.http.post<User>(this.baseUrl,data);
+  }
+  updateUser(data:any,id:any):Observable<User>{
+    return this.http.put<any>(this.baseUrl+id,data);
   }
 }

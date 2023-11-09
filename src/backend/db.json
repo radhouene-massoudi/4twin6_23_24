@@ -3,28 +3,28 @@
     {
       "name": "Lilah Black",
       "surname": "Todd",
-      "adress": "Optio quidem molest",
+      "adresse": "Optio quidem molest",
       "age": "66",
       "id": 1
     },
     {
-      "name": "Jillian Monroe",
-      "surname": "Mcdowell",
-      "adress": "Aut delectus cupidi",
-      "age": "33",
+      "name": "test",
+      "surname": "test",
+      "age": 66,
+      "adresse": "test",
       "id": 2
     },
     {
       "name": "Penelope Cole",
       "surname": "Carroll",
-      "adress": "Nisi irure distincti",
+      "adresse": "Nisi irure distincti",
       "age": "66",
       "id": 3
     },
     {
       "name": "Sophia Hyde",
       "surname": "Russell",
-      "adress": "Ea consequatur quia ",
+      "adresse": "Ea consequatur quia ",
       "age": "77",
       "id": 4
     },
