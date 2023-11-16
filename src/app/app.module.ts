@@ -19,6 +19,10 @@ import { MainInvoiceComponent } from './Atelier3/main-invoice/main-invoice.compo
 import { InvoiceListComponent } from './Atelier3/invoice-list/invoice-list.component';
 import { InvoiceComponent } from './Atelier3/invoice/invoice.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TvComponent } from './tv/tv.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { ShowOneProductComponent } from './show-one-product/show-one-product.component';
+import { UpdateuserInputComponent } from './core/manageUser/updateuser-input/updateuser-input.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +38,9 @@ import { HttpClientModule } from '@angular/common/http';
     MainInvoiceComponent,
     InvoiceListComponent,
     InvoiceComponent,
+    TvComponent,
+    MobileComponent,
+    ShowOneProductComponent,
 
     
   ],

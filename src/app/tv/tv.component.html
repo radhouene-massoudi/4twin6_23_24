@@ -1,0 +1,4 @@
+<div *ngFor="let produit of listProdcut">
+<app-show-one-product [p]="produit" (notif)="afterRecieveData($event)"></app-show-one-product>
+
+</div>

@@ -8,6 +8,8 @@ import { User } from 'src/app/model/users';
   styleUrls: ['./show-users.component.css']
 })
 export class ShowUsersComponent implements OnInit {
+  show=false;
+  usertoSelected!:User;
 constructor(private service:UserService){
 }
 users!:User[];
@@ -20,5 +22,14 @@ ngOnInit(): void {
       }
     )
    
+}
+
+update(us:User){
+  this.show=true;
+this.usertoSelected=us
+}
+
+traitemenet(t:any){
+  this.show=!this.show
 }
 }

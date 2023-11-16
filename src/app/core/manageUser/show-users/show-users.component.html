@@ -1,6 +1,11 @@
 <router-outlet></router-outlet>
-<div *ngFor="let user of users">
-{{user.id}}
-{{user.name}}
-{{user.surname}}
+<div *ngFor="let us of users">
+    {{us.id}}
+    {{us.name}}
+    {{us.surname}}
+    <input type="submit" value="update user" (click)="update(us)">
+</div>
+<hr>
+<div *ngIf="show">
+    <app-updateuser-input [user]="usertoSelected" (notif)="traitemenet($event)"></app-updateuser-input>
 </div>

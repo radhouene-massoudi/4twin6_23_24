@@ -1,0 +1,7 @@
+<p>mobile works!</p>
+<div *ngFor="let pro of listProdcut">
+    <app-show-one-product [p]="pro"></app-show-one-product>
+    
+</div>
+<app-tv #tv></app-tv>
+<input type="submit" value="send"  (click)="showTV(tv)">

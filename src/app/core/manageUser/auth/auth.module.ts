@@ -9,6 +9,7 @@ import { UpdateUserComponent } from '../update-user/update-user.component';
 import { DeleteUserComponent } from '../delete-user/delete-user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateuserreactiveformComponent } from '../updateuserreactiveform/updateuserreactiveform.component';
+import { UpdateuserInputComponent } from '../updateuser-input/updateuser-input.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { UpdateuserreactiveformComponent } from '../updateuserreactiveform/updat
     AddUserComponent,
     UpdateUserComponent,
     DeleteUserComponent,
-    UpdateuserreactiveformComponent
+    UpdateuserreactiveformComponent,
+    UpdateuserInputComponent
   ],
   imports: [
     CommonModule,
