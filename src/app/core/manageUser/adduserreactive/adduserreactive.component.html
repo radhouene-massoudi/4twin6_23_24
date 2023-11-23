@@ -1,0 +1,14 @@
+<form [formGroup]="formuser">
+    <label>name</label>
+    <input type="text" formControlName="name">
+    <div *ngIf="formuser.get('name').invalid">
+      <app-msgerrors [err]="formuser.get('name')"></app-msgerrors>
+    </div>
+    <label>surname</label>
+    <input type=" text" formControlName="surname">
+    <label>adresse</label>
+    <input type="text" formControlName="adresse">
+    <label>age</label>
+    <input type="number" formControlName="age">
+    <input type="submit" value="add" (click)="save()">
+</form>

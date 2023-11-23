@@ -1,7 +1,8 @@
 <p>updateuser-input works!</p>
-<form #f=ngForm>
+
+<form #f=ngForm >
 <label>id</label>
-<input type="number" name="id" [(ngModel)]="user.id">
+<input type="number" name="id"  [(ngModel)]="user.id">
 <label>name</label>
 <input type="text" name="name" [(ngModel)]="user.name">
 <label>surname</label>
@@ -10,5 +11,5 @@
 <input type="text" name="adresse" [(ngModel)]="user.adresse">
 <label>age</label>
 <input type="number" name="age" [(ngModel)]="user.age">
- <input type="submit" value="update" (click)="showForm()">
+ <input type="submit" value="update" (click)="update(f.value)">
 </form>

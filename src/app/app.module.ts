@@ -23,6 +23,9 @@ import { TvComponent } from './tv/tv.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { ShowOneProductComponent } from './show-one-product/show-one-product.component';
 import { UpdateuserInputComponent } from './core/manageUser/updateuser-input/updateuser-input.component';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
+import { MsgerrorsComponent } from './shared/msgerrors/msgerrors.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +44,8 @@ import { UpdateuserInputComponent } from './core/manageUser/updateuser-input/upd
     TvComponent,
     MobileComponent,
     ShowOneProductComponent,
+    ChildComponent,
+    ParentComponent,
 
     
   ],

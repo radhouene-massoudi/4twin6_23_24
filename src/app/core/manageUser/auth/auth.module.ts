@@ -10,6 +10,8 @@ import { DeleteUserComponent } from '../delete-user/delete-user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateuserreactiveformComponent } from '../updateuserreactiveform/updateuserreactiveform.component';
 import { UpdateuserInputComponent } from '../updateuser-input/updateuser-input.component';
+import { AdduserreactiveComponent } from '../adduserreactive/adduserreactive.component';
+import { MsgerrorsComponent } from 'src/app/shared/msgerrors/msgerrors.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { UpdateuserInputComponent } from '../updateuser-input/updateuser-input.c
     UpdateUserComponent,
     DeleteUserComponent,
     UpdateuserreactiveformComponent,
-    UpdateuserInputComponent
+    UpdateuserInputComponent,
+    AdduserreactiveComponent,
+    MsgerrorsComponent
   ],
   imports: [
     CommonModule,
