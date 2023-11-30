@@ -9,8 +9,17 @@ import {C2Component} from "./c2/c2.component";
 import { ShowUsersComponent } from './core/manageUser/show-users/show-users.component';
 import { DetailUserComponent } from './core/manageUser/detail-user/detail-user.component';
 import {DeleteUserComponent} from "./core/manageUser/delete-user/delete-user.component";
+import { AddproductComponent } from './revision/addproduct/addproduct.component';
+import { ShoppingcartComponent } from './revision/shoppingcart/shoppingcart.component';
+import { HomeComponent } from './revision/home/home.component';
+import { UpdateProductComponent } from './revision/update-product/update-product.component';
 
 const routes: Routes = [
+  { path: 'addr', component: AddproductComponent },
+  {path:'show',component:ShoppingcartComponent},
+  {path:'home',component:HomeComponent},
+  {path:'update/:id',component:UpdateProductComponent},
+  /*
  // {path:'',redirectTo:'login',pathMatch:'full'},
  {path:'login',component:LoginComponent},
   {path:'c1',component:C1Component},
@@ -22,7 +31,7 @@ const routes: Routes = [
   {path:'remove/:id', component:DeleteUserComponent},
   {path:'p',loadChildren:()=>import('../app/core/manageUser/auth/auth.module').then((t)=>t.AuthModule)},
 
-  {path:'**',component:NotfoundComponent},
+  {path:'**',component:NotfoundComponent},*/
 ];
 
 @NgModule({

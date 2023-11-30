@@ -1,0 +1,27 @@
+{
+  "product": [
+    {
+      "id": 3,
+      "name": "esprit",
+      "price": "Qui dolor amet eu c",
+      "description": "Omnis do doloremque ",
+      "category": 1
+    },
+    {
+      "id": 4,
+      "name": "Nihil maiores ducimu",
+      "price": "Nam dolores et quis ",
+      "description": "Odio fugit doloremq",
+      "category": {
+        "name": "cat1",
+        "id": 1
+      }
+    }
+  ],
+  "category": [
+    {
+      "name": "cat1",
+      "id": 1
+    }
+  ]
+}
